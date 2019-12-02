@@ -1,0 +1,29 @@
+﻿<link rel="stylesheet" href="~/css/StyleSheet1.css">
+
+@{
+    ViewData["Title"] = "SearchByName";
+}
+@model PeopleRoot
+<h1>Search Results</h1>
+
+<table class="table">
+
+    <tr>
+        <th>Name</th>
+        <th>Homeworld</th>
+        <th>Gender</th>
+        <th>Eye Color</th>
+        <th>Link</th>
+    </tr>
+    @foreach (var results in Model.results)
+    {
+        <tr>
+            <td>@results.name</td>
+            <td><a href="@results.homeworld">@results.homeworld</a></td>
+            <td>@results.gender</td>
+            <td>@results.eye_color</td>
+            <td><a href="@results.url">@results.url</a></td>
+        </tr>
+
+    }
+</table>

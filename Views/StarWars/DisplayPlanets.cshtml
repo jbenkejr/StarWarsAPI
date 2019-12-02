@@ -1,0 +1,18 @@
+﻿<link rel="stylesheet" href="~/css/StyleSheet2.css">
+
+@{
+    ViewData["Title"] = "DisplayPlanets";
+}
+
+@model PlanetRoot
+<h1>Search For Planets</h1>
+
+<form action="../StarWars/FindPlanets" method="post">
+    <input type="text" name="Id" placeholder="Search By Number" />
+    <input type="submit" value="Star Wars Planets!" />
+</form>
+<br />
+<form action="../StarWars/SearchByPlanetName" method="post">
+    <input type="text" name="name" placeholder="Search By Name" />
+    <input type="submit" value="Star Wars Planets!" />
+</form>

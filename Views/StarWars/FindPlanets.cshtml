@@ -1,0 +1,27 @@
+﻿<link rel="stylesheet" href="~/css/StyleSheet2.css">
+@{
+    ViewData["Title"] = "FindPlanets";
+}
+
+@model PlanetData
+
+<h1>Results</h1>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Climate</th>
+        <th>Terrain</th>
+        <th>Population</th>
+        <th>Link</th>
+    </tr>
+
+    <tr>
+        <td>@Model.name</td>
+        <td>@Model.climate</td>
+        <td>@Model.terrain</td>
+        <td>@Model.population</td>
+        <td><a href="@Model.url">@Model.url</a></td>
+
+    </tr>
+</table>

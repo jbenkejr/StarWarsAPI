@@ -1,0 +1,29 @@
+﻿<link rel="stylesheet" href="~/css/StyleSheet1.css">
+@{
+    ViewData["Title"] = "FindPeople";
+}
+
+@model PeopleData
+
+<h1>Search Results</h1>
+
+<div class="people">
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Homeworld</th>
+            <th>Gender</th>
+            <th>Eye Color</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>@Model.name</td>
+            <td><a href="@Model.homeworld">@Model.homeworld</a></td>
+            <td>@Model.gender</td>
+            <td>@Model.eye_color</td>
+            <td><a href="@Model.url">@Model.url</a></td>
+
+        </tr>
+    </table>
+
+</div>

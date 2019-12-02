@@ -1,0 +1,17 @@
+﻿<link rel="stylesheet" href="~/css/StyleSheet1.css">
+@{
+    ViewData["Title"] = "DisplayPeople";
+}
+
+<h1>Search Characters</h1>
+
+
+<form action="../StarWars/FindPeople" method="post">
+    <input type="text" name="Id" placeholder="Search By Number" />
+    <input type="submit" value="Star Wars People!" />
+</form>
+<br />
+<form action="../StarWars/SearchByName" method="post">
+    <input type="text" name="name" placeholder="Search By Name" />
+    <input type="submit" value="Star Wars People!" />
+</form>

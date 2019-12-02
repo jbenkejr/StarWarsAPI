@@ -1,0 +1,24 @@
+﻿body {
+    background-image: url(../img/wp3230090.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    color: black;
+}
+
+table {
+    color: black;
+}
+
+th {
+    color: black;
+    font-weight: 800;
+}
+
+tr {
+    color: black;
+    font-weight: 800;
+}

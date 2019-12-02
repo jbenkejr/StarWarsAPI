@@ -1,0 +1,25 @@
+﻿body {
+    background-image: url(../img/wp3614520.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-decoration-color: white;
+}
+
+h1{
+    color: ghostwhite;
+}
+
+.people {
+    color: ghostwhite;
+}
+
+th {
+    color: ghostwhite;
+    font-weight: 800;
+}
+
+tr {
+    color: ghostwhite;
+    font-weight: 800;
+}
