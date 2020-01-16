@@ -1,8 +1,7 @@
-﻿body {
-
+﻿.starwars{
     background-image: url(../img/wp3614448-star-wars-4k-wallpapers.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 5000px;
+    text-decoration-color: white;
 }

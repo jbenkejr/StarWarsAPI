@@ -64,5 +64,29 @@ namespace StarWarsAPI.Controllers
 
             return View(planet);
         }
+
+        public async Task<IActionResult> FindShips(int shipNum)
+        {
+            var response = await _client.GetAsync($"starships/{shipNum}");
+            var starship = await response.Content.ReadAsAsync<ShipRoot>();
+
+            return View(starship);
+        }
+
+        public async Task<IActionResult> SearchByShipName(string name)
+        {
+            var response = await _client.GetAsync($"starships/?search={name}");
+            var starship = await response.Content.ReadAsAsync<ShipRoot>();
+
+            return View(starship);
+        }
+
+        public async Task<IActionResult> DisplayShips()
+        {
+            var response = await _client.GetAsync("starships/");
+            var starship = await response.Content.ReadAsAsync<ShipRoot>();
+
+            return View(starship);
+        }
     }
 }

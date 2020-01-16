@@ -14,6 +14,7 @@
             <th>Homeworld</th>
             <th>Gender</th>
             <th>Eye Color</th>
+            <th>Species</th>
             <th>Link</th>
         </tr>
         <tr>
@@ -21,6 +22,10 @@
             <td><a href="@Model.homeworld">@Model.homeworld</a></td>
             <td>@Model.gender</td>
             <td>@Model.eye_color</td>
+            <td>@foreach (var s in Model.species)
+            {
+                <p>@s</p>
+            }</td>
             <td><a href="@Model.url">@Model.url</a></td>
 
         </tr>

@@ -1,0 +1,17 @@
+﻿<link rel="stylesheet" href="~/css/StyleSheet1.css">
+
+@{
+    ViewData["Title"] = "DisplayShips";
+}
+
+<h1>DisplayShips</h1>
+
+<form action="../StarWars/FindShips" method="post">
+    <input type="number" name="shipNum" placeholder="Search by Id" />
+    <input type="submit" value="Search!" />
+</form>
+
+<form action="../StarWars/SearchByShipName" method="post">
+    <input type="text" name="name" placeholder="Search by Name" />
+    <input type="submit" value="Search!" />
+</form>

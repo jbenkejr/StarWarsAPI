@@ -1,0 +1,31 @@
+﻿<link rel="stylesheet" href="~/css/StyleSheet2.css">
+
+@{
+    ViewData["Title"] = "SearchByShipName";
+}
+
+@model ShipRoot
+
+<h1>SearchByShipName</h1>
+
+<table class="table-bordered">
+
+    <tr>
+        <th>Name</th>
+        <th>Model</th>
+        <th>Manufacturer</th>
+        <th>Passengers</th>
+        <th>Cargo Capacity</th>
+        <th>Hyperdrive Rating</th>
+    </tr>
+
+    <tr>
+        <td>@Model.name</td>
+        <td>@Model.model</td>
+        <td>@Model.manufacturer</td>
+        <td>@Model.passengers</td>
+        <td>@Model.cargo_capacity</td>
+        <td>@Model.hyperdrive_rating</td>
+    </tr>
+
+</table>
